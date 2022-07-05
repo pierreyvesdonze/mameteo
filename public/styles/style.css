@@ -1,0 +1,69 @@
+/*
+******************************************
+VARIABLES
+******************************************
+*/
+:root {
+  --body-bg: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(34,42,105,1) 51%, rgba(77,114,196,1) 100%);
+  --main-color: white;
+  --p-color: #b3b3c8;
+}
+
+/*
+******************************************
+GENERAL
+******************************************
+*/
+html {
+  overflow: hidden;
+  height: 100vh;
+  background: var(--body-bg);
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: var(--main-color);
+}
+
+p {
+  color: var(--p-color) !important;
+}
+
+/*
+******************************************
+METEO CONTAINER
+******************************************
+*/
+.main-meteo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.meteo-img {
+  max-width: 250px;
+}
+
+.main-title,
+.temperature {
+  text-transform: uppercase;
+  text-shadow: -3px 3px 3px #111127;
+  letter-spacing: 12px;
+}
+/*# sourceMappingURL=style.css.map */
