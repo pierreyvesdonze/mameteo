@@ -36,6 +36,15 @@ p {
   color: var(--p-color) !important;
 }
 
+.hr-white {
+  height: 1px;
+  border: 0;
+  width: 90%;
+  margin: 20px auto;
+  background: #e2e2e2;
+  background: radial-gradient(circle, #f0f0f0 0%, rgba(255, 255, 255, 0.144) 50%, rgba(255, 254, 254, 0) 100%);
+}
+
 /*
 ******************************************
 METEO CONTAINER
@@ -57,7 +66,11 @@ METEO CONTAINER
 }
 
 .meteo-img {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+.main-title {
+  text-align: center;
 }
 
 .main-title,
@@ -65,5 +78,11 @@ METEO CONTAINER
   text-transform: uppercase;
   text-shadow: -3px 3px 3px #111127;
   letter-spacing: 12px;
+}
+
+.flex-left-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
