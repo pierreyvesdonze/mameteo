@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import moment from 'moment';
 
 const Search = () => {
     const [city, setCity] = useState([]);
@@ -16,10 +17,9 @@ const Search = () => {
             })
     }, []);
 
-    let date = new Date();
     // add a day
-    date.setDate(date.getDate() + 1);
-
+    var date = moment();
+    
     return (
         <div className="main-meteo-container">
             <h1 className="main-title">Nancy</h1>
@@ -28,7 +28,9 @@ const Search = () => {
                     <div className="flex-left-right">
                         <div className="flex-left">
                             <h2>
-                                Jour : {cityItem.day}
+                                {
+                                    moment(date).add(cityItem.day, 'days').locale('fr').format("Do MMM YYYY")
+                                }
                             </h2>
                             <h3 className="temperature">
                                 {cityItem.tmax}° - {cityItem.tmin}°
@@ -74,12 +76,14 @@ const Search = () => {
                             ) : ''
                             }
                         </div>
+                        {/* <SimpleBackdrop /> */}
                     </div>
 
                     <hr className="hr-white" />
                 </>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     );
 }
 
