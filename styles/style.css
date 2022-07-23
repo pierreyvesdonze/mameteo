@@ -1,0 +1,88 @@
+/*
+******************************************
+VARIABLES
+******************************************
+*/
+:root {
+  --body-bg: linear-gradient(0deg, rgba(1,1,1,1) 0%, rgba(34,42,105,1) 51%, rgba(77,114,196,1) 100%);
+  --main-color: white;
+  --p-color: #b3b3c8;
+}
+
+/*
+******************************************
+GENERAL
+******************************************
+*/
+html {
+  overflow: hidden;
+  height: 100vh;
+  background: var(--body-bg);
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: var(--main-color);
+}
+
+p {
+  color: var(--p-color) !important;
+}
+
+.hr-white {
+  height: 1px;
+  border: 0;
+  width: 90%;
+  margin: 20px auto;
+  background: #e2e2e2;
+  background: radial-gradient(circle, #f0f0f0 0%, rgba(255, 255, 255, 0.144) 50%, rgba(255, 254, 254, 0) 100%);
+}
+
+/*
+******************************************
+METEO CONTAINER
+******************************************
+*/
+.main-meteo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.meteo-img {
+  max-width: 150px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title,
+.temperature {
+  text-transform: uppercase;
+  text-shadow: -3px 3px 3px #111127;
+  letter-spacing: 12px;
+}
+
+.flex-left-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

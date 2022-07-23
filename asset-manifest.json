@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/mameteo/static/js/main.72ef71a8.js",
+    "static/media/snow.png": "/mameteo/static/media/snow.4d8cc02267e12d6c9f0f.png",
+    "static/media/cloud-storm.png": "/mameteo/static/media/cloud-storm.1a1f458190533823a618.png",
+    "static/media/cloud-rain.png": "/mameteo/static/media/cloud-rain.1be353e0323c81412670.png",
+    "static/media/sun.png": "/mameteo/static/media/sun.6cbfe860fe6f848b106e.png",
+    "static/media/fog.png": "/mameteo/static/media/fog.d8aec4da656172707d5f.png",
+    "index.html": "/mameteo/index.html",
+    "main.72ef71a8.js.map": "/mameteo/static/js/main.72ef71a8.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.72ef71a8.js"
+  ]
+}
