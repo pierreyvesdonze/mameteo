@@ -24,12 +24,12 @@ const Search = () => {
         <div className="main-meteo-container">
             <h1 className="main-title">Nancy</h1>
             {city.forecast && city.forecast.map && city.forecast.map((cityItem) => (
-                <>
-                    <div className="flex-left-right">
+                <div key={cityItem.day}>
+                    <div className="flex-left-right" >
                         <div className="flex-left">
                             <h2>
                                 {
-                                    moment(date).add(cityItem.day, 'days').locale('fr').format("Do MMM YYYY")
+                                    moment(date).add(cityItem.day, 'days').format("Do MMM YYYY")
                                 }
                             </h2>
                             <h3 className="temperature">
@@ -80,7 +80,7 @@ const Search = () => {
                     </div>
 
                     <hr className="hr-white" />
-                </>
+                </div>
             ))
             }
         </div >
